@@ -19,7 +19,7 @@ public class MockitoTest {
 	List<Order> orderList;
 	
 	@InjectMocks
-    private TradePlatform testClass;
+	private TradePlatform testClass;
 	
 	@Rule
 	public MockitoRule mockitoRule = MockitoJUnit.rule();
@@ -28,5 +28,5 @@ public class MockitoTest {
 	public void test1()  {
 		testClass.sendToMarket(OrderType.BID, "A", 1, Money.parse("USD 10.00"));
 	}
-	
+
 }
